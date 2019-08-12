@@ -1,20 +1,19 @@
-{% set version = "0.1" %}
+{% set version = "0.1.1" %}
 {% set name = "ubermagutil" %}
-{% set sha256 = "70ff25976b755eae35376263459ace2300a4cea36f05141f9e4a507fa63e4b83" %}
+{% set sha256 = "99297c0826fb9737ffd9e09239d1169a62ed6231614e0be5face1874386f3521" %}
 
 package:
   name: {{ name | lower }}
   version: {{ version }}
 
 source:
-  fn: {{ name }}-{{ version }}.tar.gz
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
   sha256: {{ sha256 }}
 
 build:
   noarch: python
   number: 0
-  script: pip install --no-deps .
+  script: pip install --no-deps . -vvv
 
 requirements:
   build:
@@ -35,10 +34,19 @@ test:
 
 about:
   home: http://ubermag.github.io/
-  license: BSD 3-clause
+  license: BSD-3-clause
+  license_family: BSD
   license_file: LICENSE
-  summary: Utilities for Ubermag
+  summary: Python utilities package used across most of ubermag packages.
+  doc_url: http://ubermagutil.readthedocs.io
   dev_url: https://github.com/ubermag/ubermagutil
+
+  description: |
+    `ubermagutil` is a Python package that provides:
+
+    - Descriptors and the typesystem decorator used in [Ubermag](http://ubermag.github.io) packages
+
+    It is available on all major operating systems (Windows, MacOS, Linux) and requires Python 3.6 or higher.
 
 extra:
   recipe-maintainers:

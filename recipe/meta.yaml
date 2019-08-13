@@ -1,6 +1,6 @@
-{% set version = "0.1.1" %}
+{% set version = "0.1.2" %}
 {% set name = "ubermagutil" %}
-{% set sha256 = "99297c0826fb9737ffd9e09239d1169a62ed6231614e0be5face1874386f3521" %}
+{% set sha256 = "5e0d67fe0b6f90c497c26aaad44a316cec733df1bbeb7a29dc3ecd2c29c85b40" %}
 
 package:
   name: {{ name | lower }}

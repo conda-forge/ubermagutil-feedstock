@@ -3,12 +3,17 @@ About ubermagutil
 
 Home: http://ubermag.github.io/
 
-Package license: BSD 3-clause
+Package license: BSD-3-clause
 
 Feedstock license: BSD 3-Clause
 
-Summary: Utilities for Ubermag
+Summary: Python utilities package used across most of ubermag packages.
 
+`ubermagutil` is a Python package that provides:
+
+- Descriptors and the typesystem decorator used in [Ubermag](http://ubermag.github.io) packages
+
+It is available on all major operating systems (Windows, MacOS, Linux) and requires Python 3.6 or higher.
 
 
 Current build status

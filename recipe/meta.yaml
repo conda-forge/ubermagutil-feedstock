@@ -37,17 +37,17 @@ about:
   license: BSD-3-clause
   license_family: BSD
   license_file: LICENSE
-  summary: Python utilities package used across most of ubermag packages.
+  summary: Python utilities package used across Ubermag.
   doc_url: http://ubermagutil.readthedocs.io
   dev_url: https://github.com/ubermag/ubermagutil
 
   description: |
-    `ubermagutil` is a Python package that provides:
+    `ubermagutil` is a Python package used across [Ubermag](http://ubermag.github.io). It provides:
 
-    - Descriptors and the typesystem decorator used in [Ubermag](http://ubermag.github.io) packages
-
-    It is available on all major operating systems (Windows, MacOS, Linux) and requires Python 3.6 or higher.
+      - definition of the type-system and
+      - conversion of units.
 
 extra:
   recipe-maintainers:
     - marijanbeg
+    - fangohr

@@ -1,6 +1,6 @@
-{% set version = "0.2.1" %}
+{% set version = "0.2.4" %}
 {% set name = "ubermagutil" %}
-{% set sha256 = "d657a728b56a782d5080ff1ea091d15bfdee4fd9b4ed0c412cd7ac2cce69f4aa" %}
+{% set sha256 = "f01b6b071e9b84bd7d11194d0fd9b09c8624c3c4139a43b335027c1b5eb3ef26" %}
 
 package:
   name: {{ name | lower }}
@@ -28,7 +28,7 @@ test:
   imports:
     - ubermagutil
     - ubermagutil.typesystem
-    
+
   commands:
     - python -c "import sys; import ubermagutil as uu; sys.exit(uu.test())"
 

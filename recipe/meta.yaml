@@ -1,9 +1,9 @@
-{% set version = "0.2.4" %}
 {% set name = "ubermagutil" %}
-{% set sha256 = "f01b6b071e9b84bd7d11194d0fd9b09c8624c3c4139a43b335027c1b5eb3ef26" %}
+{% set version = "0.2.5" %}
+{% set sha256 = "72939563c4a541539b2c94448dbd96606c8e325ef9d0c047e5d6d91c2df4b455" %}
 
 package:
-  name: {{ name | lower }}
+  name: {{ name|lower }}
   version: {{ version }}
 
 source:
@@ -13,14 +13,14 @@ source:
 build:
   noarch: python
   number: 0
-  script: pip install --no-deps . -vvv
+  script: "{{ PYTHON }} -m pip install . -vv"
 
 requirements:
   build:
-    - python >=3.7
+    - python >=3.6
     - pip
   run:
-    - python >=3.7
+    - python >=3.6
     - numpy
     - pytest
 
@@ -29,23 +29,17 @@ test:
     - ubermagutil
     - ubermagutil.typesystem
     - ubermagutil.units
-
   commands:
     - python -c "import sys; import ubermagutil as uu; sys.exit(uu.test())"
 
 about:
   home: http://ubermag.github.io/
-  license: BSD-3-clause
+  license: BSD-3-Clause
   license_family: BSD
   license_file: LICENSE
-  summary: Python utilities package used across Ubermag.
+  summary: 'Python utilities package used across Ubermag.'
   doc_url: http://ubermagutil.readthedocs.io
   dev_url: https://github.com/ubermag/ubermagutil
-
-  description: |
-    `ubermagutil` is a Python package used across Ubermag. It provides:
-      - definition of the type-system and
-      - conversion of units.
 
 extra:
   recipe-maintainers:

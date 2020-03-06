@@ -3,16 +3,12 @@ About ubermagutil
 
 Home: http://ubermag.github.io/
 
-Package license: BSD-3-clause
+Package license: BSD-3-Clause
 
 Feedstock license: BSD 3-Clause
 
 Summary: Python utilities package used across Ubermag.
 
-`ubermagutil` is a Python package used across Ubermag. It provides:
-
-  - definition of the type-system and
-  - conversion of units.
 
 
 Current build status

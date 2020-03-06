@@ -1,6 +1,6 @@
-{% set version = "0.2.2" %}
+{% set version = "0.2.4" %}
 {% set name = "ubermagutil" %}
-{% set sha256 = "779a8c3334c8f4493f01f66724301ecab1c022b246238985cc7898f674216ab1" %}
+{% set sha256 = "f01b6b071e9b84bd7d11194d0fd9b09c8624c3c4139a43b335027c1b5eb3ef26" %}
 
 package:
   name: {{ name | lower }}
@@ -17,10 +17,10 @@ build:
 
 requirements:
   build:
-    - python >=3.6
+    - python >=3.7
     - pip
   run:
-    - python >=3.6
+    - python >=3.7
     - numpy
     - pytest
 
@@ -28,7 +28,8 @@ test:
   imports:
     - ubermagutil
     - ubermagutil.typesystem
-    
+    - ubermagutil.units
+
   commands:
     - python -c "import sys; import ubermagutil as uu; sys.exit(uu.test())"
 
@@ -42,8 +43,7 @@ about:
   dev_url: https://github.com/ubermag/ubermagutil
 
   description: |
-    `ubermagutil` is a Python package used across [Ubermag](http://ubermag.github.io). It provides:
-
+    `ubermagutil` is a Python package used across Ubermag. It provides:
       - definition of the type-system and
       - conversion of units.
 

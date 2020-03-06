@@ -44,7 +44,6 @@ about:
 
   description: |
     `ubermagutil` is a Python package used across Ubermag. It provides:
-
       - definition of the type-system and
       - conversion of units.
 

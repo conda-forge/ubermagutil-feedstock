@@ -21,8 +21,8 @@ requirements:
     - pip
   run:
     - python >=3.6
-    - numpy
-    - pytest
+    - numpy >=1.18
+    - pytest >=5.4
 
 test:
   imports:

@@ -1,6 +1,6 @@
 {% set name = "ubermagutil" %}
-{% set version = "0.2.5" %}
-{% set sha256 = "72939563c4a541539b2c94448dbd96606c8e325ef9d0c047e5d6d91c2df4b455" %}
+{% set version = "0.2.6" %}
+{% set sha256 = "c15729ec3f48d3e19f284ff42d9e79c1339e3d5a2e0b9ce2fbbce16026720c62" %}
 
 package:
   name: {{ name|lower }}
@@ -13,7 +13,7 @@ source:
 build:
   noarch: python
   number: 0
-  script: "{{ PYTHON }} -m pip install . -vv"
+  script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   build:
@@ -37,7 +37,7 @@ about:
   license: BSD-3-Clause
   license_family: BSD
   license_file: LICENSE
-  summary: 'Python utilities package used across Ubermag.'
+  summary: Python utilities package used across Ubermag.
   doc_url: http://ubermagutil.readthedocs.io
   dev_url: https://github.com/ubermag/ubermagutil
 

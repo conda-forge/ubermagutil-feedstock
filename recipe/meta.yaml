@@ -22,7 +22,7 @@ requirements:
     - pip
   run:
     - python >=3.8
-    - numpy >=1.19
+    - numpy >=1.18
     - pytest >=6.2
     - setuptools >=51
 

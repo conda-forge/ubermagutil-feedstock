@@ -1,6 +1,6 @@
 {% set name = "ubermagutil" %}
-{% set version = "0.2.6" %}
-{% set sha256 = "c15729ec3f48d3e19f284ff42d9e79c1339e3d5a2e0b9ce2fbbce16026720c62" %}
+{% set version = "0.2.7" %}
+{% set sha256 = "cad47203ffb70a77e5ee4c9d034d22dfffeb5ca550c979430f2477cd268a4fcd" %}
 
 package:
   name: {{ name|lower }}
@@ -16,7 +16,7 @@ build:
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
-  build:
+  host:
     - python >=3.6
     - pip
   run:

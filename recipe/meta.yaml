@@ -15,14 +15,12 @@ build:
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
-  build:
-    - python >=3.6
   host:
     - python >=3.6
     - pip
   run:
-    - python >=3.8
-    - numpy >=1.18
+    - python >=3.6
+    - numpy >=1.19
     - pytest >=6.2
     - setuptools >=51
 

@@ -5,11 +5,13 @@ Home: http://ubermag.github.io/
 
 Package license: BSD-3-Clause
 
-Feedstock license: BSD 3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/ubermagutil-feedstock/blob/master/LICENSE.txt)
 
 Summary: Python utilities package used across Ubermag.
 
+Development: https://github.com/ubermag/ubermagutil
 
+Documentation: http://ubermagutil.readthedocs.io
 
 Current build status
 ====================

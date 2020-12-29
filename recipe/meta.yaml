@@ -1,6 +1,5 @@
 {% set name = "ubermagutil" %}
 {% set version = "0.2.7" %}
-{% set sha256 = "cad47203ffb70a77e5ee4c9d034d22dfffeb5ca550c979430f2477cd268a4fcd" %}
 
 package:
   name: {{ name|lower }}
@@ -8,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: {{ sha256 }}
+  sha256: cad47203ffb70a77e5ee4c9d034d22dfffeb5ca550c979430f2477cd268a4fcd
 
 build:
   noarch: python
@@ -17,12 +16,12 @@ build:
 
 requirements:
   host:
-    - python >=3.6
-    - pip
+    - python >=3.8
   run:
-    - python >=3.6
-    - numpy >=1.18
-    - pytest >=5.4
+    - python >=3.8
+    - numpy >=1.19
+    - pytest >=6.2
+    - setuptools >=51.1
 
 test:
   imports:
@@ -30,18 +29,19 @@ test:
     - ubermagutil.typesystem
     - ubermagutil.units
   commands:
-    - python -c "import sys; import ubermagutil as uu; sys.exit(uu.test())"
+    - python -c "import sys; import ubermagutil; sys.exit(ubermagutil.test())"
 
 about:
   home: http://ubermag.github.io/
   license: BSD-3-Clause
   license_family: BSD
   license_file: LICENSE
-  summary: Python utilities package used across Ubermag.
+  summary: Utility package used across Ubermag.
   doc_url: http://ubermagutil.readthedocs.io
   dev_url: https://github.com/ubermag/ubermagutil
 
 extra:
   recipe-maintainers:
     - marijanbeg
+    - lang-m
     - fangohr

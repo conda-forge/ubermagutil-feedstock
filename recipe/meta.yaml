@@ -22,7 +22,7 @@ requirements:
     - python >=3.8
     - numpy >=1.19
     - pytest >=6.2
-    - setuptools >=50.0
+    - setuptools
 
 test:
   imports:

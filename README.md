@@ -11,7 +11,7 @@ Summary: Utility package used across Ubermag.
 
 Development: https://github.com/ubermag/ubermagutil
 
-Documentation: https://ubermag.github.io/documentation/ubermagutil.html
+Documentation: https://ubermag.github.io/package-documentation/ubermagutil.html
 
 Current build status
 ====================
@@ -124,4 +124,5 @@ Feedstock Maintainers
 * [@lang-m](https://github.com/lang-m/)
 * [@marijanbeg](https://github.com/marijanbeg/)
 * [@samjrholt](https://github.com/samjrholt/)
+* [@swapneelap](https://github.com/swapneelap/)
 

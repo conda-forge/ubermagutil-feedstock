@@ -38,7 +38,7 @@ about:
   license_family: BSD
   license_file: LICENSE
   summary: Utility package used across Ubermag.
-  doc_url: https://ubermag.github.io/documentation/ubermagutil.html
+  doc_url: https://ubermag.github.io/package-documentation/ubermagutil.html
   dev_url: https://github.com/ubermag/ubermagutil
 
 extra:
@@ -47,3 +47,4 @@ extra:
     - lang-m
     - fangohr
     - samjrholt
+    - swapneelap

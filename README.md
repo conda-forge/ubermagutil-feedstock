@@ -11,7 +11,7 @@ Summary: Utility package used across Ubermag.
 
 Development: https://github.com/ubermag/ubermagutil
 
-Documentation: http://ubermagutil.readthedocs.io
+Documentation: https://ubermag.github.io/package-documentation/ubermagutil.html
 
 Current build status
 ====================
@@ -59,7 +59,8 @@ conda search ubermagutil --channel conda-forge
 About conda-forge
 =================
 
-[![Powered by NumFOCUS](https://img.shields.io/badge/powered%20by-NumFOCUS-orange.svg?style=flat&colorA=E1523D&colorB=007D8A)](http://numfocus.org)
+[![Powered by
+NumFOCUS](https://img.shields.io/badge/powered%20by-NumFOCUS-orange.svg?style=flat&colorA=E1523D&colorB=007D8A)](https://numfocus.org)
 
 conda-forge is a community-led conda channel of installable packages.
 In order to provide high-quality builds, the process has been automated into the
@@ -122,4 +123,6 @@ Feedstock Maintainers
 * [@fangohr](https://github.com/fangohr/)
 * [@lang-m](https://github.com/lang-m/)
 * [@marijanbeg](https://github.com/marijanbeg/)
+* [@samjrholt](https://github.com/samjrholt/)
+* [@swapneelap](https://github.com/swapneelap/)
 

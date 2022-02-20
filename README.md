@@ -11,7 +11,7 @@ Summary: Utility package used across Ubermag.
 
 Development: https://github.com/ubermag/ubermagutil
 
-Documentation: https://ubermag.github.io/package-documentation/ubermagutil.html
+Documentation: https://ubermag.github.io/documentation/ubermagutil.html
 
 Current build status
 ====================

@@ -11,7 +11,7 @@ source:
 
 build:
   noarch: python
-  number: 0
+  number: 1
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
@@ -38,7 +38,7 @@ about:
   license_family: BSD
   license_file: LICENSE
   summary: Utility package used across Ubermag.
-  doc_url: https://ubermag.github.io/package-documentation/ubermagutil.html
+  doc_url: https://ubermag.github.io/documentation/ubermagutil.html
   dev_url: https://github.com/ubermag/ubermagutil
 
 extra:

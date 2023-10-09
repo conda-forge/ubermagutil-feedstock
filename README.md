@@ -1,11 +1,11 @@
-About ubermagutil
-=================
+About ubermagutil-feedstock
+===========================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/ubermagutil-feedstock/blob/main/LICENSE.txt)
 
 Home: http://ubermag.github.io/
 
 Package license: BSD-3-Clause
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/ubermagutil-feedstock/blob/main/LICENSE.txt)
 
 Summary: Utility package used across Ubermag.
 

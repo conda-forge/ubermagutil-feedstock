@@ -1,5 +1,5 @@
 {% set name = "ubermagutil" %}
-{% set version = "0.63.2" %}
+{% set version = "0.63.3" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 9b53bcdc1ab39514102e8ab52dfb6f1880780f67120d04ceee0f5bc04a850e0a
+  sha256: 7e23fcf2802c2b0745d653f15b14bb26e79d8a06cce50d762f4b2eba5d008017
 
 build:
   noarch: python
@@ -20,7 +20,7 @@ requirements:
     - pip
   run:
     - python >=3.8
-    - numpy >=1.19
+    - numpy ~=1.19
     - pytest >=6.2
     - tqdm
 
